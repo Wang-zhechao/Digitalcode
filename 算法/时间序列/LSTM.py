@@ -101,5 +101,5 @@ if __name__ == '__main__':
     plt.plot(y_test, label='row')
     plt.plot(y_predictes, label='pre')
     plt.legend()
-    # plt.show()
+    plt.show()
 
