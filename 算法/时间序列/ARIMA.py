@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from pandas.plotting import lag_plot
+from pandas.plotting import autocorrelation_plot
 import matplotlib.pyplot as plt
 
 import pmdarima as pm
@@ -96,6 +97,9 @@ if __name__ == '__main__':
     # print(data.shape)
 
     # autoCorrelationPlot(data)
+    # autocorrelation_plot(data)  # 自相关图
+    lag_plot(data)  # 滞后图
+    plt.show()
 
     x_train, x_test = data.values[0:int(data.shape[0] * 0.8)], data.values[int(data.shape[0] * 0.8)::]
 
